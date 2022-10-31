@@ -17,15 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счётчика:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypc-P2-RgK">
-                                <rect key="frame" x="0.0" y="143.66666666666666" width="430" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-Mb-x63">
-                                <rect key="frame" x="0.0" y="287" width="430" height="95.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-Mb-x63">
+                                <rect key="frame" x="0.0" y="287" width="430" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -40,7 +34,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ych-Zl-t5Y"/>
+                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g68-oH-KVo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,15 +42,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FRi-Mb-x63" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6vH-If-qvx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypc-P2-RgK" secondAttribute="trailing" id="7Dc-it-E2U"/>
                             <constraint firstItem="FRi-Mb-x63" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.6" id="9Fa-Se-YLw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRi-Mb-x63" secondAttribute="trailing" id="BYn-4h-zhQ"/>
                             <constraint firstItem="zcX-MN-DcB" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.15" id="IeM-UP-zRw"/>
-                            <constraint firstItem="ypc-P2-RgK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.3" id="c3B-xb-bkx"/>
                             <constraint firstItem="zcX-MN-DcB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f3k-89-BWy"/>
-                            <constraint firstItem="ypc-P2-RgK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gyi-0l-37e"/>
                             <constraint firstItem="zcX-MN-DcB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.2" id="kUW-N5-8Pq"/>
-                            <constraint firstItem="ypc-P2-RgK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xEy-su-5FA"/>
                             <constraint firstItem="FRi-Mb-x63" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="y7C-c0-MeV"/>
                         </constraints>
                     </view>

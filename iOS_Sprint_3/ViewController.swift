@@ -12,16 +12,21 @@ class ViewController: UIViewController {
     var count = 0
     
     @IBOutlet weak var countLabel: UILabel!
-    @IBAction func addButton(_ sender: Any) {
-        count += 1
-        countLabel.text = String(count)
+
+    func setTextCountLabel() {
+        countLabel.text = "Значение счётчика:\n\(count)"
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        countLabel.text = String(count)
+        setTextCountLabel()
     }
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        count += 1
+        setTextCountLabel()
+    }
+    
 }
 
